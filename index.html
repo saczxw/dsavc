@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>主页</title>
+  <meta name="viewport"
+        content="width=device-width,user-scalable=no,initial-scale=1, minimum-scale=1,maximum-scale=1"/>
+  <meta name="apple-mobile-web-app-capable" content="no">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="renderer" content="webkit"/>
+  <meta name="force-rendering" content="webkit"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+  <meta name="msapplication-tap-highlight" content="no">
+  <meta name="full-screen" content="yes"/>
+  <meta name="x5-fullscreen" content="true"/>
+  <meta name="360-fullscreen" content="true"/>
+  <meta name="x5-page-mode" content="app">
+ <link rel="stylesheet" type="text/css" href="https://3848https.ut72i.com/style-mobile.758d4.css"/>	
+
+  <link rel="stylesheet" type="text/css" href="https://3848https.ut72i.com/person1-1.0.0.css">
+    <style type="text/css">
+        * {
+            padding: 0;
+            margin: 0;
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+            -webkit-backface-visibility: hidden;
+        }
+        
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
+        
+        ul {
+            list-style: none;
+        }
+        
+        input {
+            border: none;
+            outline: none
+        }
+        
+        body {
+            font-family: 'Helvetica Neue', Helvetica, 'Hiragino Sans GB', 'Microsoft YaHei', 微软雅黑, Arial, sans-serif;
+            cursor: default;
+        }
+        
+        img {
+            border: none;
+        }
+        
+        .head {
+            position: relative;
+            width: 100%;
+            height: 25vw;
+            overflow: hidden;
+        }
+        
+        .head .avatar {
+            position: absolute;
+            top: 2vw;
+            left: 3vw;
+            width: 21vw;
+            height: 21vw;
+            border-radius: 4px;
+        }
+        
+        .head .avatar .id {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 6vw;
+            line-height: 6vw;
+            font-size: 12pt;
+            text-align: center;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+        
+        .head .avatar img {
+            position: absolute;
+            border-radius: 4px;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .head .name {
+            position: absolute;
+            top: 2vw;
+            left: 27vw;
+            width: 60vw;
+            height: 10.5vw;
+            line-height: 10.5vw;
+            font-size: 13pt;
+            color: white;
+        }
+        
+        .phone {
+            position: absolute;
+            left: 27vw;
+            bottom: 2vw;
+            width: 27vw;
+            height: 8vw;
+        }
+        
+        .changePhone {
+            position: absolute;
+            left: 27vw;
+            bottom: 2vw;
+            width: 40vw;
+            height: 7vw;
+            font-size: 2.2vh;
+            color: #39d6fe;
+        }
+        
+        .roomcard {
+            position: absolute;
+            bottom: 2vw;
+            right: 4vw;
+            width: 24vw;
+            height: 18vw;
+            border-style: solid;
+            border-color: orange;
+            border-width: 0.1vh;
+            border-radius: 0.5vh;
+        }
+        
+        .roomcard .num {
+            position: absolute;
+            top: 1vw;
+            width: 100%;
+            height: 9vw;
+            line-height: 9vw;
+            font-size: 2.5vh;
+            color: white;
+            text-align: center;
+            overflow: hidden;
+        }
+        
+        .roomcard .text {
+            position: absolute;
+            top: 8vw;
+            width: 100%;
+            height: 9vw;
+            line-height: 9vw;
+            font-size: 2.3vh;
+            color: orange;
+            text-align: center;
+            overflow: hidden;
+        }
+        
+        .transf {
+            transform-style: preserve-3d;
+            animation: transf .5s infinite linear;
+            -webkit-animation: transf .5s infinite linear;
+        }
+        
+        @keyframes transf {
+            from {
+                -webkit-transform: rotateY(0deg);
+            }
+            to {
+                -webkit-transform: rotateY(360deg)
+            }
+        }
+        
+        @-webkit-keyframes transf {
+            from {
+                -webkit-transform: rotateY(0deg);
+            }
+            to {
+                -webkit-transform: rotateY(360deg)
+            }
+        }
+        
+        .rcIcon {
+            position: absolute;
+            top: 2vw;
+            left: 3vw;
+            width: 9.375vw;
+            height: 9.375vw;
+        }
+        
+        .rcContent {
+            position: absolute;
+            left: 15.375vw;
+            width: 50vw;
+            height: 13.75vw;
+            line-height: 13.75vw;
+            font-size: 12pt;
+            color: white;
+        }
+        
+        .rcArrow {
+            position: absolute;
+            right: 3vw;
+            top: 4.0625vw;
+            width: 3.125vw;
+            height: 5.625vw;
+        }
+        
+        .sendRedpackage {
+            position: relative;
+            height: 13.75vw;
+            overflow: hidden;
+            margin-top: 5vw;
+        }
+        
+        .userList {
+            position: relative;
+            height: 13.75vw;
+            overflow: hidden;
+            margin-top: 1vw;
+        }
+        
+        .groupMenuDetail {
+            position: relative;
+            height: 27.5vw;
+            margin-top: 1vw;
+            overflow: hidden;
+        }
+        
+        .gameMenu {
+            position: relative;
+            height: 25vw;
+            text-align: center;
+            overflow: hidden;
+            margin-top: 5vw;
+        }
+        
+        .gameListItem {
+            position: absolute;
+            width: 18vw;
+            height: 25vw;
+            font-size: 12pt;
+            color: white;
+            text-align: center;
+        }
+        
+        .gameScoreTitle {
+            position: relative;
+            height: 13vw;
+            line-height: 13vw;
+            font-size: 12pt;
+            color: white;
+            text-align: center;
+            margin-top: 1vw;
+        }
+        
+        [v-cloak] {
+            display: none !important;
+        }
+        
+        #app-main .alertB {
+            position: fixed;
+            z-index: 9997;
+            width: 150px;
+            height: 150px;
+            top: 50%;
+            left: 50%;
+            margin-top: -75px;
+            margin-left: -75px;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        
+        #app-main .alertB .alertBackgroundB {
+            filter: alpha(opacity=50);
+            -moz-opacity: 0.5;
+            opacity: 0.5;
+            background: #000;
+            height: 100%;
+            width: 100%;
+        }
+        
+        #app-main .alertB img {
+            position: absolute;
+            top: 10px;
+            left: 29px;
+        }
+        
+        #app-main .alertB .alertTextB {
+            position: absolute;
+            top: 100px;
+            width: 150px;
+            text-align: center;
+            font-size: 18px;
+            color: #fff;
+            filter: alpha(opacity=95);
+            -moz-opacity: 0.95;
+            opacity: 0.95;
+        }
+    </style>
+
+</head>
+
+<body>
+  <div id="border" style="display: none;">
+  
+    <div id="loading" style="position: fixed;width:100%;height:100%;top:0;left:0;background: #000;">
+        <img src="https://3848https.ut72i.com/loading.gif" style="top: 40%;position: absolute;left: 50%;margin-left: -45px;margin-top: -45px;" />
+    </div>
+
+    <div>
+        <div class="background" style="background: url('https://3848https.ut72i.com/prelogin_bg.jpg')" v-show="isWeChat">
+            <div class="black"></div>
+        </div>
+
+        <div id="validePhone">
+            <div class="phoneMask" style="position: fixed;z-index: 98;top: 0;left: 0;width: 100%;height: 100%;background-color: rgba(0,0,0,0.5);"></div>
+            <div class="phoneFrame" style="position: fixed;z-index: 99;width: 90vw;max-width: 90vw; top: 50%; left: 50%;-webkit-transform:translate(-50%,-60%); background-color: #fff; text-align: center; border-radius: 8px; opacity: 1; color: white;">
+
+                <div style="width: 90vw;height: 3px;">
+                    <div style="position: absolute;height: 1px;width: 90vw;left: 0vw;background-color: rgb(64, 112, 251)"></div>
+                </div>
+
+
+
+                <div>
+                    <div style="height: 2.2vw;"></div>
+                    <div style="position: relative;height: 15vw;word-wrap: break-word;word-break: break-all;color: #000;background-color: white;border-top: solid;border-color: #e6e6e6;border-width: 0px;">
+                        <div style="position: absolute;height: 15vw;line-height: 15vw;width: 28vw;">
+                            账号：
+                        </div>
+                        <input id="idVal" type="number" oninput="if(value.length>11)value=value.slice(0,11)" pattern="\d*" placeholder="输入手机号码" style="padding:0 12px 0 12px;position: absolute;top:  2.5vw;left: 22vw;width: 60vw;height: 11vw;line-height: 6.5vw;border-style: solid;border-width: 1px;border-radius: 0.5vh;border-color: rgb(240,240,240);background-color: rgb(240,240,240);font-size: 4vw;-webkit-appearance: none;">
+                    </div>
+                    <div style="height: 4vw;line-height: 4vw;color: red;font-size: 3.5vw;text-align: left;margin-left: 20vw;">
+
+                    </div>
+
+                    <div style="position: relative;height: 13vw;word-wrap: break-word;word-break: break-all;color: #000;background-color: white;border-top: solid;border-color: #e6e6e6;border-width: 0px;">
+                        <div style="position: absolute;height: 15vw;line-height: 13vw;width: 28vw;">
+                            验证码：
+                        </div>
+                        <input id="pasVal" type="text" placeholder="输入验证码" style="padding:0 12px 0 12px; position: absolute;top: 1vw;left: 22vw;width: 28vw;height: 11vw;line-height: 6.5vw;border-style: solid;border-width: 1px;border-radius: 0.5vh;border-color: rgb(240,240,240);background-color: rgb(240,240,240);font-size: 4vw;-webkit-appearance: none;">
+                        
+                        
+                        <div style="position: absolute; left: 60vw;top: 2vw;width: 28vw;line-height: 10vw; font-size: 3.8vws;border-radius: 1vw;" v-on:click="getCode()">
+                            <div id="getCode" style="display: block;-webkit-box-flex:1;flex: 1;text-decoration: none;-webkit-tap-highlight-color:transparent;position: relative;margin-bottom: 0;color: rgb(255,255,255);border-top: solid;border-color: #e6e6e6;border-width: 0px;background-color: rgb(64,112,251);border-radius: 1vw;">获取验证码</div>
+                        </div>
+
+
+                    </div>
+                    <div style="height: 4vw;line-height: 4vw;color: red;font-size: 3.5vw;text-align: left;margin-left: 20vw;width: 62vw;">
+
+                    </div>
+          
+                    <div id="warm" style="height: 4vw;line-height: 4vw;color: red;font-size: 3.5vw;text-align: left;margin-left: 20vw;width: 62vw;">
+
+                    </div>
+                    <div style="position: relative; left: 9vw;width: 72vw;line-height: 11vw; font-size: 4vw;display: flex;border-radius: 2vw;" v-on:click="accountLogin()">
+                        <div id="login" style="display: none;-webkit-box-flex:1;flex: 1;text-decoration: none;-webkit-tap-highlight-color:transparent;position: relative;margin-bottom: 0;color: rgb(255,255,255);border-top: solid;border-color: #e6e6e6;border-width: 0px;background-color: rgb(64,112,251);border-radius: 1vw;">防伪进入</div>
+                    </div>
+                    <div style="height:8vw;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+	
+	<script src="https://3848https.ut72i.com/jquery-3.3.1.min.71aeb.js" charset="utf-8"></script>
+	<canvas id="GameCanvas" oncontextmenu="event.preventDefault()" tabindex="0"></canvas>
+	<script>window.YDD_RESOURCE_URL = "https://3848https.ut72i.com/";</script>
+
+</body>
+	
+</html>
